@@ -1,0 +1,708 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/*copyright lynda.com 2011
+feel free to use these styles as you wish
+attribution would be nice, but not required
+*/
+
+/* desolve color palette
+#4C4341     rgb(76, 67, 65)  ASH
+#646266      rgb(100, 98, 102)  DULL GRAY
+#7B798F     rgb(123, 121, 143)  PEWTER BLUE
+#ADA982    rgb(173, 169, 130)  DARK TAN
+#D8D5BC   rgb(216, 213, 188)  MED TAN
+#EDE4D6   rgb(237, 228, 214)  LIGHT TAN
+#667F6A     rgb(102, 127, 106)  DARK GREEN
+#DB7E40	 rgb(219,126,64) BURNT ORANGE
+*/
+
+/*Global styles -----------------------------------------------------------------------------------------------------------*/
+
+/*limited reset*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align:baseline;
+	font: inherit;
+}
+
+/*html5 display rule*/
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	display: block;
+}
+
+a:hover {
+	color: #7B798F;
+	border-bottom: 1px solid #7B798F;
+}
+
+.preview a {
+	display: block;
+	height:100%;
+}
+
+.preview a:hover {
+	border: none;
+}
+
+a.phone {
+	border: none;
+	color: inherit;
+}
+
+a.phone:hover {
+	border: none;
+	color: inherit;
+	cursor: default;
+}
+
+html {
+	background: grey;
+}
+
+body {
+	font: 100% Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	position: relative;
+	background: #fff;
+	color: rgb(76, 67, 65);
+	font-weight:normal;
+	font-style:normal;
+}
+
+#mainNav h2 {
+	display: none;
+}
+
+nav ul {
+	list-style: none;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+/*Basic layout styles -----------------------------------------------------------------------------------------------------------*/
+
+body {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+header {
+	height: 165px;
+}
+
+article {
+	float: left;
+	width: 850px;
+	padding-left: 50px;
+    background: white; 
+}
+
+aside {
+	float: right;
+	width: 280px;
+	padding-right: 50px;
+}
+
+#pageFooter {
+	clear:both;
+	overflow:hidden;
+	height: 150px;
+}
+
+/* Content region styles -----------------------------------------------------------------------------------------------------------*/
+
+/*header styles*/
+header {
+    background: black;
+	padding-top: 1px;
+	overflow: hidden;
+	margin-bottom: 1.5em;
+	padding-left: 50px;
+    border-bottom: 2px solid rgb(76, 67, 65) ; 
+    border-bottom-color: black;
+    
+}
+
+header h1 {
+	font-size: 3em;
+	font-weight: none;
+	text-transform: uppercase;
+	line-height: 100px;
+	line-height: 165px;
+	margin-right: .5em;
+	float: left;
+	padding-left: 11px;
+    margin-bottom: 0em;
+	/* background: url(../_images/desolve_logo.png) no-repeat left center; inserire il logo*/  
+	color: #fff;
+}
+
+header h2 {
+	font-style: italic;
+	font-weight:normal;
+	font-size: 1.4em;
+	color: white;
+	float: left;
+    margin-top: 30px;
+    margin-left: 120px; 
+	/* text-transform: lowercase;*/ 
+	letter-spacing:.1em;
+	line-height: 165px;
+}
+header a, header a:hover {
+	color: white;
+	border: none;
+}
+
+/*nav styles*/
+#mainNav {
+	overflow: hidden;
+	margin-bottom: 1.5em;
+    align-content: center;
+	padding-left: 50px;
+    padding-top: 20px; 
+}
+
+#mainNav li {
+	float: left;
+	margin-right: 3.6em;
+}
+
+#mainNav a {
+	text-transform: uppercase;
+	display: block;
+	color: rgb(76, 67, 65);
+	border: none;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+#mainNav a.current {
+	color: rgb(123, 121, 143);
+	cursor: default;
+}
+
+#mainNav a em {
+	font-size: .8em;
+	display: block;
+	text-transform:capitalize; 
+	color: rgb(76, 67, 65);
+}
+
+a.logo {
+	background: url(../_images/logo.png);
+/*	padding-left: 20px;*/
+}
+
+/*a.gear {
+	background: url(../_images/icon_sprites_25.png) no-repeat 38px -98px;
+	padding-left: 20px;
+}*/
+
+a.interact {
+	background: url(../_images/icon_sprites_25.png) no-repeat 62px -197px;
+	padding-left: 90px;
+}
+
+/*a.shop {
+	background: url(../_images/icon_sprites_25.png) no-repeat 6px -297px;
+	padding-left: 18px;
+}*/
+
+/*banner styles*/
+.banner {
+	height: 500px;
+	padding-left: 50px;
+	overflow: hidden;
+	background: url(../_images/umby1.jpg) no-repeat;
+    background-position: center;
+	margin-bottom: 0em;
+	position: relative;
+}
+
+.banner h1 {
+	font-size: 2.2em;
+	color: #fff;
+	padding-top: 400px;
+	letter-spacing:.1em;
+	text-transform: uppercase;
+}
+
+.banner p {
+	width: 250px;
+	padding: 15px 15px 0;
+	height: 200px;
+	font-size: 1.2em;
+	color: #fff;
+	background: rgba(123, 121, 143, .8);
+	position: absolute;
+    text-align: inherit;
+	top: 0;
+	right: 0;
+}
+
+
+/*article styles*/
+article section {
+	border-bottom: 2px solid rgb(76, 67, 65);
+	margin-bottom: 2em;
+}
+
+#archives h2 {
+    margin-top: 2.9em;
+	border-bottom: 2px solid rgb(76, 67, 65);
+	margin-bottom: 0.5em;
+}
+
+article h1, article h2, article h3 {
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+article > h1 {
+	font-size: 1.8em;
+	border-bottom: 2px solid rgb(76, 67, 65);
+	margin-bottom: .5em;
+/*	background: url(../_images/icon_sprites_50.png) no-repeat;*/
+    margin-top: 0.5em
+}
+
+article h2 {
+	font-size: 1.4em;
+	border-bottom: 2px solid rgb(76, 67, 65);
+	margin-top: 1.5em;
+}
+
+article h2 a {
+	color: rgb(76, 67, 65);
+	border: none;
+}
+
+article p {
+	font-size:1em;
+	margin: 1.2em 0;
+}
+article ul {
+	margin:0 0 1em 50px;
+}
+
+
+/*page-specific main content styles*/
+#home h1 {
+	background-position: right -790px;
+	padding: 20px 0 5px;
+}
+#galleries h1 {
+	background-position: right top;
+	padding: 20px 0 5px;
+}
+#contact h2 {
+	background-position: right -395px;
+	padding: 10px 0 5px;
+}
+
+#galleries h2 {
+	font: 2.8em Georgia, Times, "Times New Roman", serif;
+	float: left;
+	margin: 0 0 .1em;
+	border: none;
+}
+
+#galleries p {
+	font-size:1.2em;
+	margin: .8em 0;
+}
+
+#galleries p.pubdate {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	float: right;
+	padding-top: .8em;
+	margin:0;
+}
+
+article .preview {
+	height: 250px;
+	clear:both;
+}
+article h2 a:hover {
+	color: rgb(123, 121, 143);
+	border: none;
+}
+
+.preview a, .preview a:hover {
+	display: block;
+	border: none;
+}
+
+.philly .preview {
+	background: url(../_images/sicily1.jpg) no-repeat;
+    background-position: center;
+    height: 300px;
+}
+
+.chicago .preview {
+	background: url(../_images/milan1.jpg) no-repeat;
+    background-position: center;
+    height: 300px;
+}
+
+.nyc .preview {
+	background: url(../_images/alpi1.jpg) no-repeat;
+    background-position: center;
+    height: 300px;
+}
+
+/* individual gallery styles*/
+#gallery {
+	margin-top: 2em;
+}
+
+#gallery h1 {
+	background: none;
+	padding: 0;
+	border: none;
+	margin: 0;
+	font-size: 6.4em;
+	font-weight: normal;
+	font-style: normal;
+	color: rgba(255, 255, 255, .6);
+	text-shadow: 2px 2px 0 rgba(123, 121, 143,.6);
+    margin-top: 0;
+}
+
+.intro {
+	-moz-column-count: 2;
+	-moz-column-gap: 1em;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 1em;
+	column-count: 2;
+	column-gap: 1em;
+	margin-bottom: 1em;
+}
+
+.intro p {
+	font-size: 1em;
+	margin: 0 0 1em;
+}
+
+.photos {
+	-moz-column-count: 1;
+	-moz-column-gap: 1em;
+	-webkit-column-count: 1;
+	-webkit-column-gap: 1em;
+	column-count: 1;
+	column-gap: 1em;
+	margin-bottom: 2em;
+}
+
+.photos img {
+	width: 100%;
+	margin-bottom: .5em;
+}
+
+/*contact styles*/
+
+.social h2 {
+	font-size: 1.4em;
+    object-position: center; 
+    text-align: center; 
+	float: none;
+	margin-bottom: 1em;
+    margin-left: 1.5em;
+}
+
+#contact h3 {
+	font-size: 1em;
+	border-bottom: 1px solid rgb(76, 67, 65);
+	margin: 1em 0 .5em;
+}
+
+.social ul {
+    list-style: none; 
+	display: inline-block;
+    margin-left: 450px; 
+	width: 5px;
+    margin-top: 2em;
+	margin-bottom: 1em;
+	width: 225px;
+    display: inline; 
+}
+
+.social li a {
+	color:white;
+	border: none;
+	padding-left: 40px;
+	line-height: 50px;
+	font-size: 1.2em;
+	display:block;
+}
+
+.social li a:hover {
+	color: rgb(219,126,64);
+}
+
+.facebook {
+   margin: 50px;
+   color: white; 
+    text-underline-position: none; 
+    border-bottom: none; 
+}
+
+.linked {
+   margin: 50px;
+   color: white; 
+    text-underline-position: none; 
+    border-bottom: none; 
+}
+
+.px {
+   margin: 50px;
+   color: white; 
+    text-underline-position: none; 
+    border-bottom: none; 
+}
+/*form styles*/
+fieldset {
+	border: none;
+	background: rgb(237, 228, 214);
+	position: relative;
+	width: 80%;
+	min-width: 300px;
+	padding:1em;
+	margin: 1em 0;
+	-webkit-border-radius: 0 .5em .5em 0;
+	-moz-border-radius: 0 .5em .5em 0;
+	border-radius: 0 .5em .5em 0;
+}
+
+fieldset:before {
+	content:attr(title);
+	display: block;
+	font: 1.2em Cantarell, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	border-bottom: 1px solid rgb(76, 67, 65);
+	width: 80%;
+}
+
+legend {
+	position: absolute;
+	top:0;
+	left: -2000em;
+}
+
+fieldset p {
+	font: .8em Cantarell, Arial, Helvetica, sans-serif;
+	margin: 1em 0 0;
+	font-style: italic;
+}
+
+label {
+	display:block;
+	font-size: 1em;
+	margin: .8em 0 0;
+}
+
+input[type="text"], input[type="email"], input[type="url"], textarea {
+	width: 250px;
+}
+
+input[type="submit"] {
+	display:block;
+	margin: 1em 0;
+}
+
+.inline {
+	display: inline;
+}
+
+fieldset div {
+	width: 250px;
+}
+
+/*aside styles*/
+aside h2 {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 1.2em;
+	text-align: center;
+	margin-bottom: 1em;
+	clear: both;
+}
+
+aside nav {
+	margin-bottom: 2em;
+}
+
+aside nav a {
+	display:block;
+	padding-left: 16px;
+	border: 1px groove rgb(219,126,64);
+    border-color: black;
+	color: rgb(76, 67, 65);
+	line-height: 2em;
+	margin-bottom: 1px;
+}
+
+aside nav li {
+	background: white; 
+}
+
+aside nav a:hover {
+	color: #fff;
+	border:none;
+	background: rgb(100, 98, 102);
+}
+
+.contest img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 1em;
+}
+
+.contest p {
+	font-size: .9em;
+	margin: 0 auto 1.5em;
+}
+
+.enter a {
+	float: right;
+	border: 1px solid #999;
+	margin: 1em 0 1.5em;
+	color: rgb(76, 67, 65);
+	width: 5em;
+	height: 1.4em;
+	line-height: 1.4em;
+	text-align: center;
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	background: rgb(226,226,226);
+	background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(50%, rgba(219,219,219,1)), color-stop(51%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* W3C */
+}
+
+.enter a:hover {
+	background: rgb(254,254,254); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(49%, rgba(209,209,209,1)), color-stop(50%, rgba(219,219,219,1)), color-stop(100%, rgba(226,226,226,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e2e2e2', GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 49%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%); /* W3C */
+}
+
+/*footer styles*/
+#pageFooter {
+	background: black;
+    border-top: 1px solid black;
+	padding-top: .5em;
+    height: auto;
+    color: white;
+}
+
+/*
+#pageFooter label {
+	display: block;
+	font-size: 1.2em;
+	text-transform:uppercase;
+}
+*/
+
+#pageFooter p {
+    color: white;
+	float: right;
+	clear: right;
+	margin-right: 3.9%;
+	text-align: right;
+}
+
+
+/*
+#pageFooter a {
+	display:block;
+	height: 100px;
+	line-height: 100px;
+	border: none;
+	color:rgb(76, 67, 65);
+	padding-left: 95px;
+	background: url(../_images/tweet_90.png) no-repeat;
+}
+*/
+
+#pageFooter form {
+	float: left;
+	margin-left: 50px;
+	display: inline;
+}
+
+/*Add lab selectors here:*/
+
+/*write a selector that targets every link element throughout the entire site*/
+a {
+	text-decoration: none;
+	color: rgb(219,126,64);
+	border-bottom: 1px dotted rgb(219,126,64);
+}
+
+/*write a selector that targets the copyright paragraph in the footer*/
+a.notice{
+	width: 300px;
+    color: white;
+    border: none; 
+    bottom: 5px; 
+    right: 10px;
+    position: absolute; 
+    text-align: right; 
+    
+}
+
+/*write a selector that targets the dates inside the upcoming dates list on the index.htm page*/
+ul span{
+	font-weight: bold;
+}
+
+/*write a selector that changes the background of every 2nd list item in the unordered list that forms the archived gallery menu in the sidebar*/
+/*#archives li:nth-child(even) {
+background-color: yellow; 
+}*/
+
+#archives ul {
+    background: white; 
+    background-color: white; 
+    color: white;
+}
+
+/*write a selector that will change the color of the main navigation links as users hover over them*/
+#mainNav a:hover {
+	color: rgb(219,126,64);
+}
+
+/*write a selector that targets the search input text box in the footer, make sure it will ONLY target the search input form element*/
+ #search {
+	width: 500px;
+}
+
+/*write a selector that will add the usage text you see here at the end of the photos gallery*/
+ .photos::after{
+	content: "All photos by Umberto Pagnotta";
+	font-style: italic;
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
